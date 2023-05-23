@@ -1,0 +1,41 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.todo-item.completed {
+  background-color: #ddd;
+  color: #888;
+}
+
+.todo-title {
+  flex: 1;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.todo-title.completed {
+  text-decoration: line-through;
+}
+
+.todo-item button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d9534f;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.completed-button {
+  width: 140px;
+  background-color: #5cb85c !important;
+}
