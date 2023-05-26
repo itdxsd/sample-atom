@@ -23,6 +23,7 @@ const useTodo = () => {
       }
       return todoItem;
     });
+    console.log(updatedTodos)
     setTodos([...updatedTodos]);
   };
 

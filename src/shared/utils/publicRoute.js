@@ -1,21 +1,23 @@
 import React, { useContext } from 'react'
-import { Route, Redirect } from 'react-router-dom'
-import PropTypes from 'prop-types'
-import { AuthContext } from '../context/authContext'
+import { redirect , Route, Routes } from 'react-router-dom'
+import PropTypes, { element } from 'prop-types'
+// import { AuthContext } from '../context/authContext'
 
 function PublicRoute({ component: Component, ...rest }) {
-    const { authenticated, loading } = useContext(AuthContext)
+    // const { authenticated, loading } = useContext(AuthContext)
+    const authenticated = false;
+    const loading = false
     if (loading) {
         return null
     }
-
+    console.log(!authenticated && !loading)
     return (
-        <Route
-            {...rest}
-            render={(props) =>
-                !authenticated && !loading ? <Component {...props} /> : <Redirect to="/tfs" />
+        <Routes>
+            { !authenticated && !loading ?
+                <redirect   to="/tfs" />
+                : <redirect   to="/tfs" />
             }
-        />
+        </Routes>
     )
 }
 

@@ -1,0 +1,152 @@
+.login-container {
+    display: grid;
+    grid-template-columns: 15% 39% 41% 0% 0%;
+    grid-template-rows: 110px 100px 315px 50px auto;
+    height: 100vh;
+    overflow: auto;
+}
+
+.top-left {
+    object-fit: contain;
+    height: 100%;
+    min-height: 100%;
+  }
+
+input[type="Username"]::placeholder {
+    text-align: center;
+}
+
+.input-logo{  
+    /* background-image:url(https://fx-rate.net/images/favi_transfer/paypal.com.png);    */
+    background-position:left;   
+    background-repeat:no-repeat;   
+    padding-left:1px;
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    /* border-radius: 24px 24px 24px 24px; */
+ }
+
+.bottom-right {
+    position: absolute;
+    bottom: -14px;
+    right: 6px;
+    color: #ffffff;
+    font-family:  "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login-container .login-logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    position: relative;
+}
+
+.logo-trust-fund {
+    object-fit: contain;
+    height: 100%;
+    min-height: 100%;
+    float: right;
+}
+
+.login-title {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #666666;
+    max-width: 525px;
+}
+
+.img-center {
+    text-align: center!important;
+    padding: 11px;
+}
+
+.login-title-label {
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+}
+
+.login-title-label h1 {
+    font-size: 2rem;
+    margin: 10px 0 5px;
+}
+
+div.login-forms {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #666666;
+    padding: 54px;
+    position: relative;
+    max-width: 525px;
+}
+
+.login-forms .login-forms-label {
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-div-corner{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px;
+    top: 327px;
+    max-width: 525px;
+}
+
+.login-div-corner div.rcorner {
+    border-radius: 111px 12px;
+    background: #666666;
+    border: solid 2.5px #666666;
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+    box-shadow: #888888 -5px 5px 10px;
+    float: right;
+    bottom: 2px;
+    position: relative;
+}
+
+.login-error-message {
+    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-row-end: 7;
+    border: 1px;
+    border-radius: 9px 9px 9px 9px;
+    justify-self: center;
+    background-color: #cc0033;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    padding: 0px 70px 1px 66px;
+}
+
+.login-error-message .error-wrap {
+    word-wrap: break-word;
+}
+
+.login-footer {
+    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-row-start: 9;
+    grid-row-end: 150;
+    color: #666666;
+    font-family:  "Lato", sans-serif;
+    max-height: 195px;
+    min-height: 195px;
+    text-align: center;
+}
+
+.login-footer label {
+    margin-top: 10px;
+}
